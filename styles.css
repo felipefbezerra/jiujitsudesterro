@@ -1,11 +1,11 @@
 :root {
-    --primary: #000000;    /* Preto */
-    --accent: #8b0000;     /* Vermelho Profundo */
-    --secondary: #1a1a1a;  /* Cinza quase preto */
+    --primary: #000000;    
+    --accent: #8b0000;     
+    --secondary: #1a1a1a;  
     --light: #f4f4f4;
     --text: #333;
     --white: #ffffff;
-    --padding-lateral: 10%; /* Padronização da margem */
+    --padding-lateral: 10%; 
 }
 
 * {
@@ -65,9 +65,7 @@ nav a:hover {
     color: var(--accent);
 }
 
-/* Hero Section */
 .hero {
-    /* Gradiente dinâmico em 135 graus passando pelas três cores */
     background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 50%, var(--primary) 100%);
     color: var(--white);
     text-align: center;
@@ -75,7 +73,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Sombra para destacar o texto sobre o fundo branco/claro */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
@@ -110,7 +107,6 @@ nav a:hover {
     background-color: #c92a35;
 }
 
-/* Container Padrão */
 section {
     padding: 80px var(--padding-lateral);
 }
@@ -139,7 +135,6 @@ section h2::after {
     transform: translateX(-50%);
 }
 
-/* Agenda de Treinos */
 .agenda-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -203,10 +198,8 @@ section h2::after {
 .tipo-nogi { background: #444; }
 .tipo-kimono { background: var(--primary); }
 
-/* História */
 #historia { background: var(--white); text-align: center; }
 
-/* Valores */
 .valores-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -234,7 +227,6 @@ section h2::after {
     margin-bottom: 20px;
 }
 
-/* Mestre Section */
 .mestre-flex {
     display: flex;
     align-items: center;
@@ -251,7 +243,6 @@ section h2::after {
     box-shadow: 20px 20px 0 var(--secondary);
 }
 
-/* Galeria de Alunos */
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -273,7 +264,6 @@ section h2::after {
 
 .aluno-info { padding: 20px; text-align: center; }
 
-/* Configuração da Galeria */
 .foto-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -284,28 +274,27 @@ section h2::after {
 .foto-item {
     overflow: hidden;
     border-radius: 10px;
-    height: 250px; /* Altura fixa para manter a simetria */
+    height: 250px; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .foto-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+    object-fit: cover; 
     transition: transform 0.5s ease;
-    filter: grayscale(20%); /* Um leve filtro para estilo */
+    filter: grayscale(20%); 
 }
 
 .foto-item:hover img {
-    transform: scale(1.1); /* Efeito de zoom */
+    transform: scale(1.1); 
     filter: grayscale(0%);
 }
 
-/* Estilos do Lightbox */
 .lightbox {
-    display: none; /* Escondido por padrão */
+    display: none; 
     position: fixed;
-    z-index: 2000; /* Acima de tudo */
+    z-index: 2000; 
     left: 0;
     top: 0;
     width: 100%;
@@ -345,14 +334,12 @@ section h2::after {
     font-size: 1.2rem;
 }
 
-/* Ajuste Mobile */
 @media (max-width: 480px) {
     .foto-grid {
-        grid-template-columns: 1fr; /* Uma foto por linha em celulares pequenos */
+        grid-template-columns: 1fr; 
     }
 }
 
-/* FAQ Section */
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
@@ -401,7 +388,6 @@ details p {
     font-size: 0.95rem;
 }
 
-/* Contato / Funcionamento */
 #funcionamento {
     background: var(--primary);
     color: var(--white);
@@ -420,7 +406,6 @@ details p {
 
 .contato-info i { margin-right: 10px; color: var(--accent); }
 
-/* Footer */
 footer {
     background-color: #050c16;
     color: rgba(255,255,255,0.7);
@@ -429,23 +414,22 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     :root { --padding-lateral: 5%; }
 
     .menu-toggle {
-        display: block; /* Mostra o botão no celular */
+        display: block; 
     }
 
     header {
         position: sticky;
         padding: 15px 5%;
-        justify-content: space-between; /* Garante logo de um lado e botão do outro */
-        flex-direction: row; /* Mantém alinhado na horizontal */
+        justify-content: space-between; 
+        flex-direction: row; 
     }
 
     nav {
-        display: none; /* Esconde por padrão */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 100%; 
@@ -457,7 +441,6 @@ footer {
         z-index: 999;
     }
 
-    /* Quando o menu estiver aberto pelo JS */
     nav.active {
         display: flex !important;
     }
