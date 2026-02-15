@@ -100,3 +100,32 @@ if(carouselContainer) {
         }, 5000);
     });
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreBtn = document.getElementById('btn-load-more');
+    const inicialFotos = 8; 
+    const fotosPorClique = 4; 
+    
+    const todasFotos = document.querySelectorAll('.foto-item');
+
+    todasFotos.forEach((foto, index) => {
+        if (index >= inicialFotos) {
+            foto.classList.add('hidden');
+        }
+    });
+
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+            const fotosEscondidas = document.querySelectorAll('.foto-item.hidden');
+            
+            for (let i = 0; i < fotosPorClique; i++) {
+                if (fotosEscondidas[i]) {
+                    fotosEscondidas[i].classList.remove('hidden');
+                }
+            }
+
+            if (document.querySelectorAll('.foto-item.hidden').length === 0) {
+                loadMoreBtn.parentElement.style.display = 'none';
+            }
+        });
+    }
+});
