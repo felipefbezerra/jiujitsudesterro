@@ -235,12 +235,24 @@ section h2::after {
 }
 
 .mestre-content { flex: 1; min-width: 300px; }
-.mestre-img { flex: 1; min-width: 300px; text-align: center; }
+.mestre-img { 
+    flex: 1; 
+    min-width: 300px; 
+    text-align: center; 
+
+}
+
+
+
 .mestre-img img {
     width: 100%;
-    max-width: 450px;
+    max-width: 350px; 
+    height: 450px; 
+    object-fit: cover; 
+    object-position: top; 
     border-radius: 20px;
     box-shadow: 20px 20px 0 var(--secondary);
+
 }
 
 .galeria {
@@ -249,21 +261,58 @@ section h2::after {
     gap: 30px;
 }
 
+.alunos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 35px; 
+    padding: 40px 0;
+    justify-items: center;
+}
+
 .aluno-card {
     background: var(--white);
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-radius: 20px; 
+    overflow: visible;   
+    width: 250px;
+    margin: 0 auto;
+    box-shadow: 12px 12px 0 var(--secondary); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aluno-card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 17px 17px 0 var(--accent); 
 }
 
 .aluno-card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 20px 20px 0 0; 
 }
 
-.aluno-info { padding: 20px; text-align: center; }
+.aluno-info {
+    padding: 20px;
+    text-align: center;
+    background: var(--white);
+    border-radius: 0 0 20px 20px; 
+}
 
+.aluno-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.aluno-info p {
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-weight: 600;
+}
 .foto-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
