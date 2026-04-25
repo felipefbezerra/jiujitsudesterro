@@ -1,0 +1,97 @@
+[
+  {
+    "numero": 1,
+    "titulo": "Respeito ao Professor",
+    "descricao": "Trate o professor com respeito e atenção. Escute as instruções com silêncio e postura adequada. O respeito à hierarquia é base do Jiu-Jitsu."
+  },
+  {
+    "numero": 2,
+    "titulo": "Kimono Limpo",
+    "descricao": "Use sempre o kimono (gi) limpo e higienizado. Corte as unhas, mantenha os cabelos presos e garanta que a higiene pessoal seja irrepreensível antes de qualquer treino."
+  },
+  {
+    "numero": 3,
+    "titulo": "Pontualidade",
+    "descricao": "Chegue no horário. O treino começa com o aquecimento e atrasos atrapalham a turma. Caso se atrase, aguarde a autorização do professor para entrar no tatame."
+  },
+  {
+    "numero": 4,
+    "titulo": "Proibição de Calçados no Tatame",
+    "descricao": "É proibido usar calçados no tatame. Ao entrar na área de treino, retire seu calçado. Fora do tatame, nunca fique descalço para evitar contaminações."
+  },
+  {
+    "numero": 5,
+    "titulo": "Comunicação durante o Treino",
+    "descricao": "Evite conversas desnecessárias durante as explicações técnicas. Quando o professor fala, todos ouvem. Dúvidas devem ser feitas no momento adequado."
+  },
+  {
+    "numero": 6,
+    "titulo": "Controle do Ego",
+    "descricao": "O treino não é competição. Pratique com intensidade adequada, respeite a limitação do parceiro e jamais use força bruta desnecessária durante o sparring."
+  },
+  {
+    "numero": 7,
+    "titulo": "Respeito ao Companheiro",
+    "descricao": "Trate cada parceiro de treino com cuidado e respeito. Proteja seu colega como gostaria de ser protegido. Somos uma família no tatame."
+  },
+  {
+    "numero": 8,
+    "titulo": "Tap é Tap",
+    "descricao": "Ao bater (dar o tap), a técnica deve ser interrompida imediatamente. Da mesma forma, quando você estiver em posição dominada e não conseguir sair, bata antes de se machucar."
+  },
+  {
+    "numero": 9,
+    "titulo": "Proibição de Golpes de Percussão",
+    "descricao": "Socos, chutes, cotovelos e joelhadas são totalmente proibidos nos treinos de Jiu-Jitsu. Nosso foco é nas técnicas de alavancas, imobilizações e finalizações."
+  },
+  {
+    "numero": 10,
+    "titulo": "Guardar o Celular",
+    "descricao": "Deixe o celular guardado durante o treino. A concentração e a presença plena são fundamentais para o aprendizado e para a segurança de todos."
+  },
+  {
+    "numero": 11,
+    "titulo": "Comprometimento com o Projeto",
+    "descricao": "Este é um projeto social gratuito. Seu compromisso com a frequência e a dedicação é a forma de retribuir o investimento feito na sua formação."
+  },
+  {
+    "numero": 12,
+    "titulo": "Linguagem Apropriada",
+    "descricao": "Palavrões e linguagem agressiva são proibidos, especialmente nas turmas infantis. Mantenha um ambiente respeitoso para todos, independentemente da idade."
+  },
+  {
+    "numero": 13,
+    "titulo": "Cuidar do Espaço",
+    "descricao": "O tatame é nosso templo. Ajude a manter o espaço limpo e organizado. Guarde os equipamentos após o uso e colabore com a manutenção do ambiente."
+  },
+  {
+    "numero": 14,
+    "titulo": "Comportamento fora do Tatame",
+    "descricao": "Um praticante de Jiu-Jitsu deve ser um exemplo de conduta fora do tatame também. O que você aprende aqui deve ser usado para construção de paz, nunca de conflitos."
+  },
+  {
+    "numero": 15,
+    "titulo": "Hierarquia das Faixas",
+    "descricao": "Respeite a hierarquia das faixas. Faixas mais altas carregam mais experiência e responsabilidade. Aprenda com elas. Faixas mais baixas merecem encorajamento."
+  },
+  {
+    "numero": 16,
+    "titulo": "Comunicar Lesões",
+    "descricao": "Se você estiver lesionado ou sentir dor durante o treino, comunique imediatamente ao professor. Nunca treine machucado sem o conhecimento do responsável."
+  },
+  {
+    "numero": 17,
+    "titulo": "Frequência Consistente",
+    "descricao": "A evolução no Jiu-Jitsu depende da consistência. Frequente os treinos regularmente. Em caso de ausência prolongada, comunique ao professor."
+  },
+  {
+    "numero": 18,
+    "titulo": "Espírito de Equipe",
+    "descricao": "Celebre as vitórias dos seus companheiros como se fossem suas. Apoie quem está lutando. Uma equipe forte é aquela que cresce junta."
+  },
+  {
+    "numero": 19,
+    "titulo": "Identidade e Representação",
+    "descricao": "Ao representar o projeto em competições ou eventos externos, lembre-se: você não carrega apenas seu nome, mas o de toda a equipe e do projeto social. Honre-o com dignidade."
+  }
+]

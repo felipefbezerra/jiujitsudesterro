@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --accent: #8b0000;
+    --primary: #000000;
+    --secondary: #1a1a1a;
+  }
+
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-4xl md:text-5xl text-black font-display tracking-wide text-center mb-4;
+  }
+  .title-bar {
+    @apply w-16 h-1 bg-accent mx-auto mb-12;
+  }
+  .btn-primary {
+    @apply bg-accent text-white font-bold px-8 py-3 rounded-full uppercase tracking-widest text-sm 
+           transition-all duration-300 hover:bg-red-700 hover:scale-105 
+           shadow-lg shadow-red-900/30 inline-block;
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+  }
+  .tag-kimono {
+    @apply bg-black text-white text-xs px-3 py-1 rounded uppercase tracking-widest font-bold;
+  }
+  .tag-nogi {
+    @apply bg-zinc-600 text-white text-xs px-3 py-1 rounded uppercase tracking-widest font-bold;
+  }
+}
+
+/* Page transition */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+/* Lightbox */
+.lightbox-overlay {
+  animation: fadeInOverlay 0.2s ease;
+}
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #8b0000;
+  border-radius: 3px;
+}
+
+/* Filter button animation */
+.filter-item-enter {
+  animation: filterFadeIn 0.35s ease forwards;
+}
+@keyframes filterFadeIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
